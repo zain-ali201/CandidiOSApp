@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="GalanoClassicSemiBold.otf">
+            <string>GalanoClassic-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="92" id="KGk-i7-Jjw" customClass="InviteCell" customModule="Candid" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="92"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="92"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UWL-Rt-XjC" customClass="UIImageViewX" customModule="Candid" customModuleProvider="target">
+                        <rect key="frame" x="20" y="12" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="UWL-Rt-XjC" secondAttribute="height" id="k9a-LE-ZJ1"/>
+                            <constraint firstAttribute="width" constant="60" id="ks6-Be-qbV"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="30"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="00a-v4-hbK">
+                        <rect key="frame" x="88" y="31.5" width="41.5" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vZx-Zc-pa6">
+                        <rect key="frame" x="238" y="26" width="70" height="32"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70" id="Fr0-9k-l03"/>
+                            <constraint firstAttribute="height" constant="32" id="bAA-7e-OSe"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="GalanoClassic-SemiBold" family="Galano Classic" pointSize="12"/>
+                        <state key="normal" title="Invite">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="vZx-Zc-pa6" firstAttribute="centerY" secondItem="00a-v4-hbK" secondAttribute="centerY" id="Kk5-rx-DkO"/>
+                    <constraint firstItem="00a-v4-hbK" firstAttribute="centerY" secondItem="UWL-Rt-XjC" secondAttribute="centerY" id="RjR-Y3-VoR"/>
+                    <constraint firstItem="00a-v4-hbK" firstAttribute="leading" secondItem="UWL-Rt-XjC" secondAttribute="trailing" constant="8" id="WzB-ng-qMn"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="UWL-Rt-XjC" secondAttribute="bottom" constant="12" id="dSx-iU-vzb"/>
+                    <constraint firstItem="UWL-Rt-XjC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="e0g-3x-PZw"/>
+                    <constraint firstAttribute="trailing" secondItem="vZx-Zc-pa6" secondAttribute="trailing" constant="12" id="p1Z-rQ-8Rm"/>
+                    <constraint firstItem="UWL-Rt-XjC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="rqB-vu-JbX"/>
+                    <constraint firstItem="UWL-Rt-XjC" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="s3w-GI-Uv8"/>
+                    <constraint firstItem="vZx-Zc-pa6" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="00a-v4-hbK" secondAttribute="trailing" constant="8" id="xkm-1A-BkO"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imgView" destination="UWL-Rt-XjC" id="gKW-3A-dIX"/>
+                <outlet property="inviteBTN" destination="vZx-Zc-pa6" id="Nj5-vx-F6h"/>
+                <outlet property="nameLabel" destination="00a-v4-hbK" id="dXe-lv-eJh"/>
+            </connections>
+            <point key="canvasLocation" x="92.753623188405811" y="57.589285714285708"/>
+        </tableViewCell>
+    </objects>
+</document>

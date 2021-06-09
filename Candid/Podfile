@@ -1,0 +1,28 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'Candid' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for Candid
+  pod 'SVProgressHUD'
+  pod 'Toast-Swift'
+  pod 'IQKeyboardManagerSwift'
+  pod 'Alamofire'
+  pod 'EzPopup'
+  pod 'Firebase/Analytics'
+  pod 'Firebase/Messaging'
+  pod 'Kingfisher'
+  pod 'Closures'
+  pod 'SwiftyCam'
+  pod 'BSImagePicker'
+  pod 'SwiftyContacts'
+  #pod 'raygun4apple'
+  pod 'UPCarouselFlowLayout'
+  pod 'GrowingTextView'
+  pod 'IPImage'
+  pod 'Pickle'
+  pod 'TLPhotoPicker'
+
+end

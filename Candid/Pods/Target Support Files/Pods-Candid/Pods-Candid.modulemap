@@ -1,0 +1,6 @@
+framework module Pods_Candid {
+  umbrella header "Pods-Candid-umbrella.h"
+
+  export *
+  module * { export * }
+}
